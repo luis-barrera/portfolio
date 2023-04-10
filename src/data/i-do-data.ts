@@ -1,3 +1,5 @@
+// TODO: poner esto en un .server.js
+
 import faviconUrl from "$lib/assets/favicon.png";
 
 export interface WorkArea {
