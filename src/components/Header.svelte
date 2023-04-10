@@ -2,26 +2,31 @@
 	import '../app.css';
 	import Github from './svg/Github.svelte';
 	import Linkedin from './svg/Linkedin.svelte';
+	import Logo from './svg/Logo.svelte';
 </script>
 
 <header>
 	<nav
-		class="fixed top-0 right-0 left-0 bg-white border-gray-200 px-4 lg:px-6 py-1 dark:bg-gray-800"
+		class="fixed top-0 right-0 left-0
+                bg-white dark:bg-black
+                border-b border-black dark:border-white
+                border-gray-200 px-4 lg:px-6 py-1"
 	>
 		<div
 			class="flex flex-wrap justify-between
               items-center mx-auto max-w-screen-xl"
 		>
 			<a href="/" class="flex items-center">
-				<!-- TODO: en lugar de un h1 que sea una imágen, pensar en un logo-->
-				<span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
-					luis-barrera
-				</span>
+				<Logo height={'2rem'} />
 			</a>
 			<div class="flex items-center lg:order-2">
 				<div class="flex flex-row gap-2">
-					<Github />
-					<Linkedin />
+					<a href="https://github.com/luis-barrera">
+						<Github />
+					</a>
+					<a href="https://www.linkedin.com/in/luis-antonio-valdovinos-barrera/">
+						<Linkedin />
+					</a>
 				</div>
 
 				<button
