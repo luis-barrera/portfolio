@@ -15,7 +15,8 @@
 </script>
 
 <!-- TODO: Body Component -->
-<body class="min-h-screen">
+
+<body class="min-h-screen bg-white dark:bg-black py-4">
 	<h2 class="text-center">I Do:</h2>
 
 	<nav>
