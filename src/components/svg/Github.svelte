@@ -4,6 +4,7 @@
 	export let color: string | null = null;
 	export let height = '32px';
 	export let width = '100%';
+	export let hoverColor = 'black';
 
 	let style = `display:inline;fill:#${color};fill-opacity:1;`;
 </script>

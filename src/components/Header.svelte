@@ -8,6 +8,11 @@
 	import Logo from './svg/Logo.svelte';
 	import { onMount } from 'svelte';
 
+	import { definedColors } from '../data/definedColors';
+
+	// Variable for prop
+	export let baseColor: string | null = null;
+
 	let showHeader = false;
 
 	let lastScrollY = 0;
@@ -15,6 +20,7 @@
 
 	function handleScroll(event: Event) {
 		actualScrollY = (event.currentTarget as Window).scrollY;
+
 		if (actualScrollY > lastScrollY) {
 			showHeader = false;
 		} else {
@@ -44,15 +50,16 @@
               items-center mx-auto max-w-screen-xl"
 			>
 				<a href="/" class="flex items-center">
-					<Logo height={'2rem'} />
+					<Logo height={'2rem'} color={baseColor} />
 				</a>
+
 				<div class="flex items-center lg:order-2">
 					<div class="flex flex-row gap-2">
 						<a href="https://github.com/luis-barrera">
-							<Github />
+							<Github hoverColor={baseColor} />
 						</a>
 						<a href="https://www.linkedin.com/in/luis-antonio-valdovinos-barrera/">
-							<Linkedin />
+							<Linkedin hoverColor={baseColor} />
 						</a>
 					</div>
 

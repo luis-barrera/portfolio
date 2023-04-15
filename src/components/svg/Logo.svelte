@@ -10,21 +10,14 @@
 -->
 
 <script lang="ts">
+	import { definedColors } from '../../data/definedColors';
+
 	// Color to use
 	export let color: string | null = null;
 
 	// Size
 	export let height = '120px';
 	export let width = '100%';
-
-	// List of colors defined by author
-	let definedColors: { [index: string]: string } = {
-		brown: '473c33',
-		green: 'abc269',
-		yellow: 'fec868',
-		pink: 'fda769',
-		black: '000000'
-	};
 
 	if (color && color in definedColors) {
 		color = definedColors[color];
