@@ -2,7 +2,7 @@
 	import Logo from '../components/svg/Logo.svelte';
 </script>
 
-<article class="min-h-screen bg-white dark:bg-black">
+<article class="min-h-screen">
 	<div class="top-0 right-0 left-0">
 		<div class="grid place-items-center h-screen">
 			<div class="flex flex-col items-center mx-4 gap-4">

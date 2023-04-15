@@ -35,8 +35,8 @@
 {#if showHeader}
 	<header transition:fade={{ easing: sineInOut }} class="fixed top-0 right-0 left-0">
 		<nav
-			class="bg-white dark:bg-black
-              border-b border-black dark:border-white
+			class="bg-neutral-100 dark:bg-neutral-700
+              shadow-lg shadow-neutral-100 dark:shadow-neutral-700
               px-4 lg:px-6 py-1"
 		>
 			<div

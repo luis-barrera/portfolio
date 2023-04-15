@@ -11,13 +11,12 @@
 		'SysAdmin',
 		'Other Stuff'
 	];
+
 	let selectedArea: WorkArea | null = null;
 </script>
 
-<!-- TODO: Body Component -->
-
-<body class="min-h-screen bg-white dark:bg-black py-4">
-	<h2 class="text-center">I Do:</h2>
+<body class="min-h-screen py-4">
+	<h1 class="text-center">I Do:</h1>
 
 	<nav>
 		<div class="max-w-screen-xl">
