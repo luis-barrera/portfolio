@@ -10,21 +10,23 @@
 -->
 
 <script lang="ts">
-	import { definedColors } from '../../data/definedColors';
+	// import { definedColors } from '../../data/definedColors';
 
-	// Color to use
-	export let color: string | null = null;
+	import { baseColor } from '../../stores/baseColorStore';
 
 	// Size
 	export let height = '120px';
 	export let width = '100%';
 
-	if (color && color in definedColors) {
-		color = definedColors[color];
-	}
+	// Color to use
+	// let color: string | null = $baseColor;
+	//
+	// if (color && color in definedColors) {
+	// 	color = $baseColor;
+	// }
 
 	// Alternative style
-	let style = `display:inline;fill:#${color};fill-opacity:1;`;
+	let style = `display:inline;fill:#${$baseColor};fill-opacity:1;`;
 </script>
 
 <svg {width} {height} viewBox="0 0 120 18" version="1.1" id="luis-barrera">
@@ -62,7 +64,7 @@
 	</g>
 
 	// Switching by color provided
-	{#if !color}
+	{#if !$baseColor}
 		<g
 			aria-label="luis-barrera"
 			transform="matrix(0.93219643,0,0,1.0653128,-38.452688,-121.58565)"
