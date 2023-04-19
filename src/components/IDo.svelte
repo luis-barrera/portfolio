@@ -3,6 +3,8 @@
 	import { WorkAreaData } from '../data/i-do-data';
 	import type { WorkArea } from '../data/i-do-data';
 
+	import { checkSectionIsVisible } from '../stores/visibleSectionStore';
+
 	let workAreas: string[] = [
 		'Frontend',
 		'Backend',
@@ -13,16 +15,24 @@
 	];
 
 	let selectedArea: WorkArea | null = null;
+
+	let iDoElement: Element;
+
+	function handleScroll() {
+		checkSectionIsVisible(iDoElement, 'i-do');
+	}
 </script>
 
-<body class="min-h-screen py-4">
+<svelte:window on:scroll={handleScroll} />
+
+<section id="i-do" class="min-h-screen py-4" bind:this={iDoElement}>
 	<h1 class="text-center">I Do:</h1>
 
 	<nav>
 		<div class="max-w-screen-xl">
 			<ul
 				class="flex flex-col md:flex-row flex-wrap justify-evenly justify-items-stretch
-                  items-center mx-auto"
+                items-center mx-auto"
 			>
 				{#each WorkAreaData as area}
 					<li class="inline-block px-2">
@@ -48,4 +58,4 @@
 		<!-- Side projects -->
 		<h3>Projects</h3>
 	</nav>
-</body>
+</section>

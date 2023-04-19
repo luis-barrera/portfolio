@@ -1,5 +1,6 @@
 <script>
 	import AboutMe from '../components/AboutMe.svelte';
+	import Contact from '../components/Contact.svelte';
 	import IDo from '../components/IDo.svelte';
 </script>
 
@@ -9,7 +10,4 @@
 
 <IDo />
 
-<!-- TODO: Contact Component -->
-<section class="min-h-screen">
-	<h2>Contact</h2>
-</section>
+<Contact />
