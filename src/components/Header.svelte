@@ -8,7 +8,6 @@
 
 	import { baseColor } from '../stores/baseColorStore';
 	import { visibleSection } from '../stores/visibleSectionStore';
-	import type { SectionName } from '../stores/visibleSectionStore';
 
 	let blurHeader = false;
 	let actualScrollY = 0;
@@ -65,19 +64,14 @@
 						</a>
 					</div>
 				</div>
-				<div
-					class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1"
-					id="mobile-menu-2"
-				>
-					<ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+				<div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1">
+					<ul class="flex flex-row font-medium space-x-8 mt-0">
 						{#each sections as section}
 							<li>
 								<a
 									href="#{section.id}"
 									class:selected={$visibleSection === section.id}
-									class="block py-2 pr-4 pl-3 text-gray-700
-                        border-b border-gray-100 lg:border-0
-                        lg:p-0 dark:text-gray-400 dark:border-gray-700"
+									class="block py-2 p-0 border-0"
 								>
 									{section.name}
 								</a>
