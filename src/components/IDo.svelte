@@ -1,20 +1,20 @@
 <script lang="ts">
-	// TODO: poner esto en una load function
-	import { WorkAreaData } from '../data/i-do-data';
-	import type { WorkArea } from '../data/i-do-data';
-
 	import { checkSectionIsVisible } from '../stores/visibleSectionStore';
-
-	let workAreas: string[] = [
-		'Frontend',
-		'Backend',
-		'Data Science/Analyst',
-		'Game Development',
-		'SysAdmin',
-		'Other Stuff'
-	];
-
-	let selectedArea: WorkArea | null = null;
+	// TODO: poner esto en una load function
+	// import { WorkAreaData } from '../data/i-do-data';
+	// import type { WorkArea } from '../data/i-do-data';
+	//
+	//
+	// let workAreas: string[] = [
+	// 	'Frontend',
+	// 	'Backend',
+	// 	'Data Science/Analyst',
+	// 	// 'Game Development',
+	// 	'SysAdmin',
+	// 	'Other Stuff'
+	// ];
+	//
+	// let selectedArea: WorkArea | null = null;
 
 	let iDoElement: Element;
 

@@ -1,45 +1,58 @@
 // TODO: poner esto en un .server.js
 
 import faviconUrl from "$lib/assets/favicon.png";
+import iDoJSON from "$assets/json/i-do-data.json";
 
-export interface WorkArea {
-  name: String,
-  technologies: {
-    name: String,
-    iconUrl: String,
-    desc: String,
-    sinceYear: number  // Año desde el cual empezar a contar la experiencia
+export interface iDoSection {
+  name: string,
+  desc: string,
+  // Programming languages
+  languages: {
+    name: string,
+    pageURL: string,            // URL to language home-page
+    iconURL: string,
+    desc: string | null,        // Where I used or which things I used it in
+    sinceDate: string | null,   // Year when I learn or started to use it
   }[],
+  // libraries or Frameworks
+  libraries: {
+    name: string,
+    pageURL: string,            // URL to language home-page
+    iconURL: string,
+    desc: string | null,        // Where I used or which things I used it in
+    sinceDate: string | null,   // Year when I learn or started to use it
+  }[],
+  // Tool
+  tools: {
+    name: string,
+    iconURL: string,
+  }[],
+  // Other things
+  others: {
+    name: string,
+    iconURL: string,
+  }[] | null,
+  // Work Experience
+  work: {
+    name: string,
+    screenshotURL: string,
+    URL: string,
+    desc: string,
+    dateBegin: string | null,
+    dateEnd: string | null,
+    org: string | null,
+  }[] | null,
+  // Projects
   projects: {
-    name: String,
-    iconUrl: String,
-    desc: String,
-    dateBegin?: Date,
-    dateEnd?: Date | null,
-    place?: String
-  }[]
+    name: string,
+    screenshotURL: string,
+    URL: string,
+    desc: string,
+    dateBegin: string | null,
+    dateEnd: string | null,
+    org: string | null,
+  }[] | null
 }
 
-export var WorkAreaData: WorkArea[] = [
-  {
-    name: "Frontend",
-    technologies: [
-      {
-        name: "Javascript",
-        iconUrl: faviconUrl,
-        desc: "Frontend Frameworks and UI libraries",
-        sinceYear: 2020
-      }
-    ],
-    projects: [
-      {
-        name: "SAT GNL",
-        iconUrl: faviconUrl,
-        desc: "Development of Frontend using Angular",
-        dateBegin: new Date("September 2022"),
-        dateEnd: null,
-        place: "Lean4IT"
-      }
-    ]
-  }
-]
+export const iDoData: iDoSection[] = iDoJSON;
+

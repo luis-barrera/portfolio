@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Frontend",
+    "desc": "I use UI frameworks and libraries to create Web Apps",
+    "languages": [
+      {
+        "name": "Javascript",
+        "pageURL": "https: //developer.mozilla.org/en-US/docs/Web/javascript",
+        "iconURL": "javascript-logo",
+        "desc": "Frameworks and UI libraries",
+        "sinceDate": "2019-04-01"
+      }
+    ],
+    "libraries": [
+      {
+        "name": "Angular Material",
+        "pageURL": "https: //material.angular.io/",
+        "iconURL": "angular-material-icon",
+        "desc": "UI Components for Angular",
+        "sinceDate": "2022-09-01"
+      }
+    ],
+    "tools": [
+      {
+        "name": "WebStorm",
+        "iconURL": "webstorm-logo"
+      }
+    ],
+    "others": [
+      {
+        "name": "JSON",
+        "iconURL": "json-logo"
+      }
+    ],
+    "work": [
+      {
+        "name": "SAT GNL",
+        "screenshotURL": "sat-gnl-screenshot",
+        "URL": "https:sercon.nl.gob.mx/contribuyente/login",
+        "desc": "Design, Prototyping and Coding of Frontend using Angular",
+        "dateBegin": "2022-09-15",
+        "dateEnd": null,
+        "org": "Lean4IT"
+      }
+    ],
+    "projects": [
+      {
+        "name": "Escuelas CDMX",
+        "screenshotURL": "escuelas-cdmx-screenshot",
+        "URL": "http://escuelas-cdmx.luis-barrera.dev",
+        "desc": "Design, Prototyping and Coding of Frontend using HTML, Javascript, LeafLeft, Chart.js and Javsacript",
+        "dateBegin": "2022-09-15",
+        "dateEnd": null,
+        "org": "Lean4IT"
+      }
+    ]
+  }
+]
