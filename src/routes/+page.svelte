@@ -1,13 +1,17 @@
-<script>
+<script lang="ts">
 	import AboutMe from '../components/AboutMe.svelte';
 	import Contact from '../components/Contact.svelte';
 	import IDo from '../components/IDo.svelte';
+
+	import type { PageData } from './$types';
+
+	export let data: PageData;
 </script>
 
 <!-- TODO: ponerle i18n en español e inglés -->
 
 <AboutMe />
 
-<IDo />
+<IDo iDoData={data.iDoData} />
 
 <Contact />

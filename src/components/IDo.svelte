@@ -1,20 +1,11 @@
 <script lang="ts">
 	import { checkSectionIsVisible } from '../stores/visibleSectionStore';
-	// TODO: poner esto en una load function
-	// import { WorkAreaData } from '../data/i-do-data';
-	// import type { WorkArea } from '../data/i-do-data';
+
+	import type { IDoSection } from '../models/work-area.model';
+
+	// import type { PageLoad } from './$types';
 	//
-	//
-	// let workAreas: string[] = [
-	// 	'Frontend',
-	// 	'Backend',
-	// 	'Data Science/Analyst',
-	// 	// 'Game Development',
-	// 	'SysAdmin',
-	// 	'Other Stuff'
-	// ];
-	//
-	// let selectedArea: WorkArea | null = null;
+	export let iDoData: IDoSection[];
 
 	let iDoElement: Element;
 
@@ -26,7 +17,7 @@
 <svelte:window on:scroll={handleScroll} />
 
 <section id="i-do" class="min-h-screen py-4" bind:this={iDoElement}>
-	<h1 class="text-center">I Do:</h1>
+	<h1 class="text-center text-5xl">I Do:</h1>
 
 	<nav>
 		<div class="max-w-screen-xl">
@@ -34,9 +25,9 @@
 				class="flex flex-col md:flex-row flex-wrap justify-evenly justify-items-stretch
                 items-center mx-auto"
 			>
-				{#each WorkAreaData as area}
+				{#each iDoData as iDoSection}
 					<li class="inline-block px-2">
-						{area.name}
+						{iDoSection.name}
 					</li>
 				{/each}
 			</ul>
@@ -45,17 +36,16 @@
 
 	<!-- TODO: Frontend info Component -->
 	<!-- TODO: repetir el componente de frontend, pero con datos diferentes, en lugar de repetir componentes, tener diferente data para cada tipo de  -->
-	<nav>
-		<!-- Aquí poner el area seleccionada -->
-		<h2>Frontend</h2>
+	<!-- <nav> -->
+	<!-- Aquí poner el area seleccionada -->
+	<!-- <h2>Frontend</h2> -->
 
-		<!-- Tecnologías que conozco -->
-		<h3>Technologies</h3>
-		<p>Tecnologías Frontend</p>
-		<!-- Experincias laborales -->
-		<h3>Work</h3>
-		-
-		<!-- Side projects -->
-		<h3>Projects</h3>
-	</nav>
+	<!-- Tecnologías que conozco -->
+	<!-- <h3>Technologies</h3> -->
+	<!-- <p>Tecnologías Frontend</p> -->
+	<!-- Experincias laborales -->
+	<!-- <h3>Work</h3> -->
+	<!-- Side projects -->
+	<!-- <h3>Projects</h3> -->
+	<!-- </nav> -->
 </section>

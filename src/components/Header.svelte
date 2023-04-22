@@ -60,7 +60,7 @@
 							<SocialIcon icon={'GitHub'} />
 						</a>
 						<a href="https://www.linkedin.com/in/luis-antonio-valdovinos-barrera/">
-							<SocialIcon icon={'Linkedin'} />
+							<SocialIcon icon={'LinkedIn'} />
 						</a>
 					</div>
 				</div>
@@ -71,7 +71,7 @@
 								<a
 									href="#{section.id}"
 									class:selected={$visibleSection === section.id}
-									class="block py-2 p-0 border-0"
+									class="anchors block py-2 p-0 border-0"
 								>
 									{section.name}
 								</a>
@@ -90,6 +90,10 @@
 	}
 
 	.selected {
+		color: var(--base-color);
+	}
+
+	.anchors:hover {
 		color: var(--base-color);
 	}
 </style>

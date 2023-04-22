@@ -8,5 +8,7 @@
 <!-- Disable/enable header on scroll -->
 <Header />
 
-<!-- Rest of the page -->
-<slot />
+<div class="scroll-p-4">
+	<!-- Rest of the page -->
+	<slot />
+</div>
