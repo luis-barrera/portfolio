@@ -17,12 +17,12 @@ export interface IDoSection {
     desc: string | null,        // Where I used or which things I used it in
     sinceDate: string | null,   // Year when I learn or started to use it
   }[],
-  // Tool
+  // Tools
   tools: {
     name: string,
     iconURL: string,
   }[],
-  // Other things
+  // Other things that aren't libraries nor tools
   others: {
     name: string,
     iconURL: string,

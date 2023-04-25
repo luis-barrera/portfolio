@@ -9,6 +9,7 @@
 </script>
 
 <!-- TODO: ponerle i18n en español e inglés -->
+<!-- TODO: Arreglar el color al recargar la página -->
 
 <AboutMe />
 

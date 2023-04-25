@@ -29,10 +29,19 @@
 		}
 	}
 
+	// Wait 400 ms to show header
 	onMount(() => {
 		setTimeout(() => {
 			showHeader = true;
 		}, 400);
+
+		// Sometimes user reload page and the scroll keeps, but the blurs doesn't
+		actualScrollY = window.scrollY;
+		if (actualScrollY == 0) {
+			blurHeader = false;
+		} else {
+			blurHeader = true;
+		}
 	});
 </script>
 

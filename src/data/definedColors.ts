@@ -1,12 +1,8 @@
-// List of colors defined by author
-export const definedColors: { [index: string]: string } = {
-  green: 'abc269',
-  yellow: 'fec868',
-  pink: 'fda769',
-  purple: 'c868fe',
-  blue: '69abc2'
-
-  // These colors make conflict in dark mode
-  // brown: '473c33',
-  // black: '000000'
-};
+// List of colors. Defined by author
+export const definedColors: string[] = [
+  'abc269',
+  'fec868',
+  'fda769',
+  'c868fe',
+  '69abc2'
+]
