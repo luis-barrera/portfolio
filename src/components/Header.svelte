@@ -48,7 +48,7 @@
 <!-- Detect scrolling -->
 <svelte:window on:scroll={handleScroll} />
 
-<header style="--base-color: #{$baseColor}" class="fixed top-0 right-0 left-0">
+<header style="--base-color: #{$baseColor}" class="fixed top-0 right-0 left-0 z-50">
 	{#if showHeader}
 		<nav
 			transition:fade|local={{ easing: sineInOut }}
@@ -57,7 +57,7 @@
 		>
 			<div
 				class="flex flex-wrap justify-between
-              items-center mx-auto max-w-screen-xl"
+              items-center mx-auto max-w-screen-lg"
 			>
 				<a href="/" class="flex items-center">
 					<Logo height={'2rem'} />

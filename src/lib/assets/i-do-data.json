@@ -1,21 +1,35 @@
 [
   {
     "name": "Frontend",
-    "desc": "I use UI frameworks and libraries to create Web Apps",
+    "desc": "Use of UI frameworks/libraries to create Web Apps.",
     "languages": [
       {
-        "name": "Javascript",
-        "pageURL": "https: //developer.mozilla.org/en-US/docs/Web/javascript",
+        "name": "JavaScript",
+        "pageURL": "https://developer.mozilla.org/en-US/docs/Web/javascript",
         "iconURL": "javascript-logo",
-        "desc": "Frameworks and UI libraries",
+        "desc": "Web Frameworks and UI libraries.",
         "sinceDate": "2019-04-01"
+      },
+      {
+        "name": "TypeScript",
+        "pageURL": "https://www.typescriptlang.org/",
+        "iconURL": "typescript-logo",
+        "desc": "JavaScript with Type support.",
+        "sinceDate": "2021-04-01"
       }
     ],
     "libraries": [
       {
+        "name": "Angular",
+        "pageURL": "https://angular.io/",
+        "iconURL": "angular-logo",
+        "desc": "Web Framework",
+        "sinceDate": "2022-09-01"
+      },
+      {
         "name": "Angular Material",
-        "pageURL": "https: //material.angular.io/",
-        "iconURL": "angular-material-icon",
+        "pageURL": "https://material.angular.io/",
+        "iconURL": "angular-material-logo",
         "desc": "UI Components for Angular",
         "sinceDate": "2022-09-01"
       }
@@ -36,7 +50,7 @@
       {
         "name": "SAT GNL",
         "screenshotURL": "sat-gnl-screenshot",
-        "URL": "https:sercon.nl.gob.mx/contribuyente/login",
+        "URL": "https://sercon.nl.gob.mx/contribuyente/login",
         "desc": "Design, Prototyping and Coding of Frontend using Angular",
         "dateBegin": "2022-09-15",
         "dateEnd": null,
