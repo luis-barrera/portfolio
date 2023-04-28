@@ -6,6 +6,7 @@
 	import angularLogo from '$lib/assets/angular-logo.png';
 	import angularMaterialLogo from '$lib/assets/angular-material-logo.png';
 	import typescriptLogo from '$lib/assets/typescript-logo.png';
+	import webstormLogo from '$lib/assets/webstorm-logo.png';
 
 	import type { IDoSection } from '../models/work-area.model';
 
@@ -19,7 +20,8 @@
 		'javascript-logo': javascriptLogo,
 		'angular-logo': angularLogo,
 		'angular-material-logo': angularMaterialLogo,
-		'typescript-logo': typescriptLogo
+		'typescript-logo': typescriptLogo,
+		'webstorm-logo': webstormLogo
 	};
 
 	// Check that the section is visible
@@ -66,11 +68,21 @@
 					{iDoSection.desc}
 				</p>
 
+				{#if iDoSection.work}
+					<hr />
+					<h3 class="text-3xl text-center">Work Experience</h3>
+				{/if}
+
+				{#if iDoSection.projects}
+					<hr />
+					<h3 class="text-3xl text-center">Projects</h3>
+				{/if}
+
 				<hr />
 
-				<h3 class="text-4xl text-center">Languages</h3>
+				<h3 class="text-3xl text-center">Languages</h3>
 
-				<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 py-3">
+				<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 py-3">
 					{#each iDoSection.languages as language}
 						<div class="card">
 							<img
@@ -79,12 +91,14 @@
 								alt={language.name}
 							/>
 							<div class="p-2">
-								<h3 class="text-3xl inline-block py-1">
+								<h3 class="text-2xl py-1">
 									<a href={language.pageURL}>
 										{language.name}
 									</a>
 								</h3>
-								<p class="text-sm">{getExperienceTime(language.sinceDate)}</p>
+								{#if language.sinceDate}
+									<p class="text-sm">{getExperienceTime(language.sinceDate)}</p>
+								{/if}
 								<p class="text-base">{language.desc}</p>
 							</div>
 						</div>
@@ -93,9 +107,9 @@
 
 				<hr />
 
-				<h3 class="text-4xl text-center">Libraries / Frameworks</h3>
+				<h3 class="text-3xl text-center">Libraries / Frameworks</h3>
 
-				<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 py-3">
+				<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 py-3">
 					{#each iDoSection.libraries as librarie}
 						<div class="card">
 							<img
@@ -104,12 +118,14 @@
 								alt={librarie.name}
 							/>
 							<div class="p-2">
-								<h3 class="text-3xl inline-block">
+								<h3 class="text-2xl py-1">
 									<a href={librarie.pageURL}>
 										{librarie.name}
 									</a>
 								</h3>
-								<p class="text-sm">{getExperienceTime(librarie.sinceDate)}</p>
+								{#if librarie.sinceDate}
+									<p class="text-sm">{getExperienceTime(librarie.sinceDate)}</p>
+								{/if}
 								<p class="text-base">{librarie.desc}</p>
 							</div>
 						</div>
@@ -118,23 +134,46 @@
 
 				<hr />
 
-				<h3 class="text-4xl text-center">Tools</h3>
+				<h3 class="text-3xl text-center">Tools</h3>
 
-				{#if iDoSection.tools}
+				<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 py-3">
+					{#each iDoSection.tools as tool}
+						<div class="card">
+							<img
+								class="w-full aspect-square object-contain object-center"
+								src={assetsDict[tool.iconURL]}
+								alt={tool.name}
+							/>
+							<div class="p-2">
+								<h3 class="text-2xl py-1">
+									{tool.name}
+								</h3>
+							</div>
+						</div>
+					{/each}
+				</div>
+
+				{#if iDoSection.others}
 					<hr />
-					<h3 class="text-4xl text-center">Others</h3>
-				{/if}
+					<h3 class="text-3xl text-center">Others</h3>
 
-				{#if iDoSection.work}
-					<hr />
-					<h3 class="text-4xl text-center">Work Experience</h3>
+					<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 py-3">
+						{#each iDoSection.others as other}
+							<div class="card">
+								<img
+									class="w-full aspect-square object-contain object-center"
+									src={assetsDict[other.iconURL]}
+									alt={other.name}
+								/>
+								<div class="p-2">
+									<h3 class="text-2xl py-1">
+										{other.name}
+									</h3>
+								</div>
+							</div>
+						{/each}
+					</div>
 				{/if}
-
-				{#if iDoSection.projects}
-					<hr />
-					<h3 class="text-4xl text-center">Projects</h3>
-				{/if}
-
 				<hr />
 			{/each}
 		</div>
