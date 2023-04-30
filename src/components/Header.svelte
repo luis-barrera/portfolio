@@ -33,7 +33,7 @@
 	onMount(() => {
 		setTimeout(() => {
 			showHeader = true;
-		}, 400);
+		}, 1000);
 
 		// Sometimes user reload page and the scroll keeps, but the blurs doesn't
 		actualScrollY = window.scrollY;
