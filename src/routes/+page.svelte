@@ -20,6 +20,8 @@
 	<IDo iDoData={data.iDoData} />
 
 	<Contact />
+
+	<footer class="w-full text-center py-6">© 2023 luis-barrera</footer>
 </div>
 
 <style>

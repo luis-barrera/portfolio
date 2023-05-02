@@ -55,9 +55,9 @@
 	bind:this={iDoElement}
 	style="--base-color: #{$baseColor}"
 >
-	<h1 class="text-center text-2xl my-4">I Do:</h1>
-
 	<div class="max-w-screen-md mx-auto px-4">
+		<h1 class="text-center text-2xl my-4">I Do:</h1>
+
 		<div class="grid grid-cols-1">
 			{#each iDoData as iDoSection}
 				<h2 class="inline-block px-2 text-5xl text-center">

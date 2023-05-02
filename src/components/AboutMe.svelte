@@ -25,11 +25,13 @@
 	<div class="top-0 right-0 left-0">
 		<div class="grid place-items-center h-screen">
 			<div class="flex flex-col items-center mx-4 gap-4">
-				<h1 class="text-3xl text-center text-black dark:text-white">
-					Luis Antonio Valdovinos Barrera
-				</h1>
-
 				{#if showLogo}
+					<div transition:slide|local={{ axis: 'y', delay: 800, duration: 600 }}>
+						<h1 class="text-3xl text-center text-black dark:text-white">
+							Luis Antonio Valdovinos Barrera
+						</h1>
+					</div>
+
 					<div transition:slide|local={{ axis: 'y', delay: 800, duration: 600 }}>
 						<Logo height={'8rem'} />
 					</div>
