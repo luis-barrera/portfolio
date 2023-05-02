@@ -63,17 +63,7 @@
 					<Logo height={'2rem'} />
 				</a>
 
-				<div class="flex items-center lg:order-2">
-					<div class="flex flex-row gap-2">
-						<a href="https://github.com/luis-barrera">
-							<SocialIcon icon={'GitHub'} />
-						</a>
-						<a href="https://www.linkedin.com/in/luis-antonio-valdovinos-barrera/">
-							<SocialIcon icon={'LinkedIn'} />
-						</a>
-					</div>
-				</div>
-				<div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1">
+				<div class="hidden justify-between items-center md:flex md:w-auto">
 					<ul class="flex flex-row font-medium space-x-8 mt-0">
 						{#each sections as section}
 							<li>
@@ -87,6 +77,17 @@
 							</li>
 						{/each}
 					</ul>
+				</div>
+
+				<div class="flex items-center">
+					<div class="flex flex-row gap-2">
+						<a href="https://github.com/luis-barrera">
+							<SocialIcon icon={'GitHub'} height="2rem" />
+						</a>
+						<a href="https://www.linkedin.com/in/luis-antonio-valdovinos-barrera/">
+							<SocialIcon icon={'LinkedIn'} height="2rem" />
+						</a>
+					</div>
 				</div>
 			</div>
 		</nav>

@@ -2,16 +2,14 @@
 <script lang="ts">
 	import { baseColor } from '../../stores/baseColorStore';
 
-	export let height = '32px';
+	export let height = '100%';
 	export let width = '100%';
+	export let hoverable = true;
 	export let icon: 'GitHub' | 'LinkedIn' | 'CV' | 'Email' | 'Telegram';
-
-	let divStyle = `--base-color: #${$baseColor};`;
 </script>
 
-<!-- style="--base-color: {$baseColor};" -->
-<div id="github" class="fill-black dark:fill-white" style={divStyle}>
-	<svg {height} {width} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+<div class="social-icon fill-black dark:fill-white" style="--base-color: #{$baseColor}">
+	<svg {height} {width} xmlns="http://www.w3.org/2000/svg" class:hoverable viewBox="0 0 448 512">
 		<!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
 		{#if icon == 'GitHub'}
 			<path
@@ -38,7 +36,7 @@
 </div>
 
 <style>
-	svg:hover {
+	.hoverable:hover {
 		fill: var(--base-color);
 	}
 </style>
