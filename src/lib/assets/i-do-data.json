@@ -1,24 +1,45 @@
 [
   {
     "name": "Frontend",
-    "desc": "Use of UI frameworks/libraries to create Web Apps.",
+    "desc": "Design and Development of Websites using UI Libraries and Web Frameworks. Responsive Design. UI/UX Design",
     "languages": [
       {
         "name": "JavaScript",
         "pageURL": "https://developer.mozilla.org/en-US/docs/Web/javascript",
         "iconURL": "javascript-logo",
-        "desc": "Web Frameworks and UI libraries.",
+        "desc": "Use of Web Frameworks and UI libraries like React.",
         "sinceDate": "2019-04-01"
       },
       {
         "name": "TypeScript",
         "pageURL": "https://www.typescriptlang.org/",
         "iconURL": "typescript-logo",
-        "desc": "JavaScript with Type support.",
+        "desc": "Used with Web Frameworks like Angular or Svelte.",
         "sinceDate": "2021-04-01"
+      },
+      {
+        "name": "HTML",
+        "pageURL": "https://developer.mozilla.org/en-US/docs/Web/HTML",
+        "iconURL": "html-logo",
+        "desc": "Defining content of Websites.",
+        "sinceDate": "2018-04-01"
+      },
+      {
+        "name": "CSS",
+        "pageURL": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+        "iconURL": "css-logo",
+        "desc": "Styling of Websites.",
+        "sinceDate": "2018-04-01"
       }
     ],
     "libraries": [
+      {
+        "name": "React",
+        "pageURL": "https://react.dev/",
+        "iconURL": "react-logo",
+        "desc": "UI Library, use of hooks and components.",
+        "sinceDate": "2022-04-01"
+      },
       {
         "name": "Angular",
         "pageURL": "https://angular.io/",
@@ -30,20 +51,74 @@
         "name": "Angular Material",
         "pageURL": "https://material.angular.io/",
         "iconURL": "angular-material-logo",
-        "desc": "UI Components for Angular",
+        "desc": "UI Components Library for Angular",
         "sinceDate": "2022-09-01"
+      },
+      {
+        "name": "RxJS",
+        "pageURL": "https://rxjs.dev/",
+        "iconURL": "rxjs-logo",
+        "desc": "Reactive Library for Javascript. Use of observables and suscriptions.",
+        "sinceDate": "2022-09-01"
+      },
+      {
+        "name": "Svelte",
+        "pageURL": "https://svelte.dev/",
+        "iconURL": "svelte-logo",
+        "desc": "UI Library",
+        "sinceDate": "2023-02-01"
+      },
+      {
+        "name": "SvelteKit",
+        "pageURL": "https://svelte.dev/",
+        "iconURL": "sveltekit-logo",
+        "desc": "Web Framework",
+        "sinceDate": "2023-02-01"
+      },
+      {
+        "name": "Bootstrap",
+        "pageURL": "https://getbootstrap.com/",
+        "iconURL": "bootstrap-logo",
+        "desc": "CSS library, UI components",
+        "sinceDate": "2019-06-01"
+      },
+      {
+        "name": "TailwindCSS",
+        "pageURL": "https://tailwindcss.com/",
+        "iconURL": "tailwindcss-logo",
+        "desc": "CSS library",
+        "sinceDate": "2022-04-01"
+      },
+      {
+        "name": "daisyUI",
+        "pageURL": "https://daisyui.com/",
+        "iconURL": "daisyui-logo",
+        "desc": "UI Library, use of hooks and components.",
+        "sinceDate": "2022-04-01"
       }
     ],
     "tools": [
       {
         "name": "WebStorm",
         "iconURL": "webstorm-logo"
+      },
+      {
+        "name": "Vite",
+        "iconURL": "vite-logo"
+      },
+      {
+        "name": "npm",
+        "iconURL": "npm-logo"
       }
     ],
     "others": [
       {
         "name": "JSON",
         "iconURL": "json-logo"
+      },
+      {
+        "name": "REST API",
+        "iconURL": "rest-logo"
       }
     ],
     "work": [

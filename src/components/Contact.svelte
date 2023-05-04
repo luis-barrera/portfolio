@@ -19,7 +19,7 @@
 	<h1 class="text-center text-2xl my-4">Contact</h1>
 
 	<!-- <div class="max-w-screen-md mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 py-3"> -->
-	<div class="max-w-screen-md mx-auto flex flex-wrap justify-center gap-4 py-3">
+	<div class="max-w-screen-md mx-auto flex flex-wrap justify-center py-3">
 		<div class="basis-60">
 			<SocialIcon icon="CV" height="5rem" hoverable={false} />
 			<h2 class="text-3xl text-center">CV</h2>
