@@ -10,6 +10,10 @@
 	export let data: PageData;
 </script>
 
+<svelte:head>
+	<title>luis-barrera</title>
+</svelte:head>
+
 <!-- TODO: ponerle i18n en español e inglés -->
 
 <div style="--base-color: #{$baseColor}" class="relative h-full">
