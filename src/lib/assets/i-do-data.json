@@ -136,7 +136,7 @@
       {
         "name": "Escuelas CDMX",
         "screenshotURL": "escuelas-cdmx-screenshot",
-        "URL": "http://escuelas-cdmx.luis-barrera.dev",
+        "URL": "https://escuelas-cdmx-vite.vercel.app/",
         "desc": "Design, Prototyping and Coding of Frontend using HTML, Javascript, LeafLeft, Chart.js and Javsacript",
         "dateBegin": "2022-09-15",
         "dateEnd": null,
