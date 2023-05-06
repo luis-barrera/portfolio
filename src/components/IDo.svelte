@@ -64,7 +64,7 @@
 						{#each iDoSection.work as work}
 							<div class="p-2 basis-full md:basis-1/2 lg:basis-1/3">
 								<div class="card h-full">
-									<a href={work.URL}>
+									<a href={work.URL} target="_blank">
 										<img
 											class="w-full aspect-square object-cover object-center"
 											src={assetsDict[work.screenshotURL]}
@@ -99,7 +99,7 @@
 					</div>
 				{/if}
 
-				<!-- TODO: Projects -->
+				<!-- Projects -->
 				{#if iDoSection.projects}
 					<hr />
 					<h3 class="text-3xl text-center">Projects</h3>
@@ -108,7 +108,7 @@
 						{#each iDoSection.projects as project}
 							<div class="p-2 basis-full md:basis-1/2 lg:basis-1/3">
 								<div class="card h-full">
-									<a href={project.URL}>
+									<a href={project.URL} target="_blank">
 										<img
 											class="w-full aspect-square object-cover object-center"
 											src={assetsDict[project.screenshotURL]}
@@ -152,7 +152,7 @@
 					{#each iDoSection.languages as language}
 						<div class="p-2 basis-full md:basis-1/2 lg:basis-1/4">
 							<div class="card h-full">
-								<a href={language.pageURL}>
+								<a href={language.pageURL} target="_blank">
 									<img
 										class="w-full aspect-square object-contain object-center"
 										src={assetsDict[language.iconURL]}
@@ -185,7 +185,7 @@
 					{#each iDoSection.libraries as librarie}
 						<div class="p-2 basis-1/2 md:basis-1/3 lg:basis-1/5 flex-grow-0 overflow-hidden">
 							<div class="card h-full">
-								<a href={librarie.pageURL}>
+								<a href={librarie.pageURL} target="_blank">
 									<img
 										class="w-full aspect-square object-contain object-center"
 										src={assetsDict[librarie.iconURL]}
