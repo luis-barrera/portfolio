@@ -17,6 +17,9 @@ import viteLogo from '$lib/assets/vite-logo.png';
 import npmLogo from '$lib/assets/npm-logo.png';
 import restLogo from '$lib/assets/rest-logo.png';
 
+import genlSS from '$lib/assets/sat-gnl-screenshot.png';
+import escuelasSS from '$lib/assets/escuelas-cdmx-screenshot.png';
+
 // TODO: Mover todo este objeto a un import
 // List of assets
 export const assetsDict: { [index: string]: string } = {
@@ -37,6 +40,8 @@ export const assetsDict: { [index: string]: string } = {
   'sveltekit-logo': sveltekitLogo,
   'vite-logo': viteLogo,
   'npm-logo': npmLogo,
-  'rest-logo': restLogo
+  'rest-logo': restLogo,
+  'sat-gnl-screenshot': genlSS,
+  'escuelas-cdmx-screenshot': escuelasSS,
 };
 

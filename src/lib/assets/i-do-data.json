@@ -83,7 +83,7 @@
         "sinceDate": "2019-06-01"
       },
       {
-        "name": "TailwindCSS",
+        "name": "Tailwind<wbr/>CSS",
         "pageURL": "https://tailwindcss.com/",
         "iconURL": "tailwindcss-logo",
         "desc": "CSS library",
@@ -140,7 +140,7 @@
         "desc": "Design, Prototyping and Coding of Frontend using HTML, Javascript, LeafLeft, Chart.js and Javsacript",
         "dateBegin": "2022-09-15",
         "dateEnd": null,
-        "org": "Lean4IT"
+        "org": null
       }
     ]
   }
