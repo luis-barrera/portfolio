@@ -92,11 +92,11 @@
 </section>
 
 <style lang="postcss">
-	a {
-		border-color: var(--base-color);
+	a:hover {
+    @apply border-black dark:border-white;
 	}
 
-	a:hover {
-    border-color: inherit;
+	a {
+		border-color: var(--base-color);
 	}
 </style>
