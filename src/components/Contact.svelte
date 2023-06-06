@@ -1,9 +1,12 @@
 <script lang="ts">
 	import { checkSectionIsVisible } from '../stores/visibleSectionStore';
+	import { baseColor } from '../stores/baseColorStore';
 
 	import curriculumEsp from '$lib/assets/Luis_Antonio_Valdovinos_Barrera-ESP.pdf';
 	import curriculumEng from '$lib/assets/Luis_Antonio_Valdovinos_Barrera-ENG.pdf';
+
 	import SocialIcon from './svg/SocialIcon.svelte';
+	import Icon from './svg/Icon.svelte';
 
 	let contactElement: Element;
 
@@ -14,23 +17,29 @@
 
 <svelte:window on:scroll={handleScroll} />
 
-<section id="contact" bind:this={contactElement}>
+<section id="contact" bind:this={contactElement} style="--base-color: #{$baseColor}">
 	<br />
 	<h1 class="text-center text-2xl my-4">Contact</h1>
 
-	<!-- <div class="max-w-screen-md mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 py-3"> -->
 	<div class="max-w-screen-md mx-auto flex flex-wrap justify-center py-3">
 		<div class="basis-60">
 			<SocialIcon icon="CV" height="5rem" hoverable={false} />
 			<h2 class="text-3xl text-center">CV</h2>
 			<p class="text-center">
-				<a href={curriculumEng} download="Luis_Antonio_Valdovinos_Barrera-ENG" target="_blank"
-					>English</a
-				>
+				<a href={curriculumEng} download="Luis_Antonio_Valdovinos_Barrera-ENG"
+            class="border-b-2"
+            target="_blank">
+          English
+          <Icon icon="pdf" height={"1rem"} hoverable={false}/>
+        </a>
 			</p>
 			<p class="text-center">
-				<a href={curriculumEsp} download="Luis_Antonio_Valdovinos_Barrera-ESP" target="_blank"
-					>Spanish</a
+				<a href={curriculumEsp} download="Luis_Antonio_Valdovinos_Barrera-ESP"
+            class="border-b-2"
+            target="_blank">
+					Spanish
+          <Icon icon="pdf" height={"1rem"} hoverable={false}/>
+        </a
 				>
 			</p>
 		</div>
@@ -38,7 +47,12 @@
 		<div class="basis-60">
 			<SocialIcon icon="GitHub" height="5rem" hoverable={false} />
 			<h2 class="text-3xl text-center">GitHub</h2>
-			<p class="text-center"><a href="https://github.com/luis-barrera">luis-barrera</a></p>
+			<p class="text-center">
+        <a href="https://github.com/luis-barrera" 
+            class="border-b-2">
+          luis-barrera
+        </a>
+      </p>
 		</div>
 
 		<div class="basis-60">
@@ -46,8 +60,9 @@
 			<h2 class="text-3xl text-center">LinkedIn</h2>
 			<p class="text-center">
 				<a href="https://www.linkedin.com/in/luis-antonio-valdovinos-barrera/"
-					>Luis Antonio Valdovinos Barrera</a
-				>
+            class="border-b-2">
+          Luis Antonio Valdovinos Barrera
+        </a>
 			</p>
 		</div>
 
@@ -55,7 +70,10 @@
 			<SocialIcon icon="Email" height="5rem" hoverable={false} />
 			<h2 class="text-3xl text-center">Email</h2>
 			<p class="text-center">
-				<a href="mailto:luisvaldovinosbarrera@gmail.com">luisvaldovinosbarrera<wbr />@gmail.com</a>
+				<a href="mailto:luisvaldovinosbarrera@gmail.com"
+            class="border-b-2">
+          luisvaldovinosbarrera<wbr />@gmail.com
+        </a>
 			</p>
 		</div>
 
@@ -63,8 +81,22 @@
 			<SocialIcon icon="Telegram" height="5rem" hoverable={false} />
 			<h2 class="text-3xl text-center">Telegram</h2>
 			<p class="text-center">
-				<a href="https://t.me/luisvaldovinos" target="_blank">luisvaldovinos</a>
+				<a href="https://t.me/luisvaldovinos"
+            target="_blank" 
+            class="border-b-2">
+          luisvaldovinos
+        </a>
 			</p>
 		</div>
 	</div>
 </section>
+
+<style lang="postcss">
+	a {
+		border-color: var(--base-color);
+	}
+
+	a:hover {
+    border-color: inherit;
+	}
+</style>
